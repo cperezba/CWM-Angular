@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { AuthorsService } from './authors.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { TitleComponent } from './title/title.component';
+import { TitlecasePipe } from './titlecase.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorsComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    TitleComponent,
+    TitlecasePipe
   ],
   imports: [
     BrowserModule,
