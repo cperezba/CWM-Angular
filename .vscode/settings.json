@@ -9,7 +9,6 @@
         "karma.conf.js": true,
         "node_modules": true,
         "tsconfig.app.json": true,
-        "tsconfig.json": true,
         "tsconfig.spec.json": true
     }
 }

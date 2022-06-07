@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'favorite',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./favorite.component.css']
 })
 export class FavoriteComponent implements OnInit {
-  isFavorite = true;
+  @Input("isFavorite") isFavorite:any;
+  @Output('change') change = new EventEmitter;
 
   toggleFilled() {
     this.isFavorite = !this.isFavorite;  //When a logical '!' sign is used in front a boolean, it toggles between 'true' and 'false'
+    this.change.emit(this.isFavorite);
   }
 
   constructor() { }

@@ -3,6 +3,9 @@
 <button class="btn btn-primary">Button</button>
 
 
-<favorite></favorite>
+<favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
 <authors></authors>
 <app-title></app-title>
+<like 
+    [likesCount]="tweet.likesCount"
+    [isActive]="tweet.isLiked"></like> 
