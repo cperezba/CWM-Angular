@@ -1,0 +1,8 @@
+<label for="title">Title</label>
+<input id="title" name="title" type="text" placeholder="Title"
+#title
+(keyup)="onKeyUp(title.value)"
+/>
+
+
+<p> {{ title.value | titlecase }}</p>
